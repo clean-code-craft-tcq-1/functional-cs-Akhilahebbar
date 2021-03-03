@@ -21,15 +21,15 @@ namespace BatteryManagement
             Constants.BatteryStates batteryTemperature =CheckBatteryCondition(temperature, Constants.minTemperature, Constants.maxTemperature);
             BatteryStatus.DisplayBatteryCondition("Temperature", batteryTemperature);
         }
-        public static Constants.BatteryStates CheckBatteryCondition(float currentValue, float minValue, float maxValue)
+        public static Constants.BatteryStates CheckBatteryCondition(float ActualValue, float minValue, float maxValue)
         {
-            if (currentValue > maxValue)
+            if (ActualValue > maxValue)
             {
                 return Constants.BatteryStates.High;
 
             }
 
-            if (currentValue < minValue)
+            if (ActualValue < minValue)
             {
                 return Constants.BatteryStates.Low;
 
