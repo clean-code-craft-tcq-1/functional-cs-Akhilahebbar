@@ -2,7 +2,7 @@ using System;
 
 namespace BatteryManagement
 {
-    class Program
+    class BatteryChecker
     {
         static int Main()
         {
