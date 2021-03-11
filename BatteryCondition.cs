@@ -7,19 +7,19 @@ namespace BatteryManagement
         public static void CheckChargeRate(float chargeRate)
         {
           BatteryStates batteryChargeRate =CheckBatteryCondition(chargeRate, Constants.minChargeRate, Constants.maxChargeRate);
-            BatteryStatus.DisplayBatteryCondition("Charge Rate", batteryChargeRate);
+            TestBatteryStatus.DisplayBatteryCondition("Charge Rate", batteryChargeRate);
         }
 
         public static void CheckChargeState(float soc)
         {
            BatteryStates batteryChargeState =CheckBatteryCondition(soc, Constants.minStateOfCharge, Constants.maxStateOfCharge);
-            BatteryStatus.DisplayBatteryCondition("State of charge", batteryChargeState);
+            TestBatteryStatus.DisplayBatteryCondition("State of charge", batteryChargeState);
         }
 
         public static void CheckTemperature(float temperature)
         {
             BatteryStates batteryTemperature =CheckBatteryCondition(temperature, Constants.minTemperature, Constants.maxTemperature);
-            BatteryStatus.DisplayBatteryCondition("Temperature", batteryTemperature);
+            TestBatteryStatus.DisplayBatteryCondition("Temperature", batteryTemperature);
         }
         public static BatteryStates CheckBatteryCondition(float actualValue, float minValue, float maxValue)
         {
