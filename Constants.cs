@@ -4,6 +4,12 @@ using System.Text;
 
 namespace BatteryManagement
 {
+     public  enum BatteryStates
+        {
+            Low,
+            Normal,
+            High
+        }
    public static class Constants
     {
         public static float minChargeRate = 0.3f;
@@ -13,11 +19,6 @@ namespace BatteryManagement
          public static float minTemperature = 0;
         public static float maxTemperature = 45;
 
-        public  enum BatteryStates
-        {
-            Low,
-            Normal,
-            High
-        }
+      
     }
 }
