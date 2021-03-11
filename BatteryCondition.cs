@@ -2,7 +2,7 @@ using System;
 
 namespace BatteryManagement
 {
-    internal class BatteryCondition
+    internal static class BatteryCondition
     {
         public static void CheckChargeRate(float chargeRate)
         {
