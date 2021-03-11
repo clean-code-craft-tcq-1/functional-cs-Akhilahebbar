@@ -2,7 +2,7 @@ using System;
 
 namespace BatteryManagement
 {
-    internal class TestBatteryStatus
+    internal static class TestBatteryStatus
     {
     
         public static void CheckBatteryCondition(float temperature, float soc, float chargeRate)
