@@ -12,7 +12,7 @@ namespace BatteryManagement
             BatteryCondition.CheckChargeRate(chargeRate);
         }
 
-        public static void DisplayBatteryCondition(string attribute, Constants.BatteryStates batteryCondition)
+        public static void DisplayBatteryCondition(string attribute, BatteryStates batteryCondition)
         {
             Console.WriteLine($"Battery {attribute} is {batteryCondition}");
         }
